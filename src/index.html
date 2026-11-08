@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,24 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Розмітку додавай тут за технічним завданням -->
+    <form class="form">
+      <input
+        type="text"
+        name="search-text"
+        placeholder="Search images..."
+        autocomplete="off"
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    <ul class="gallery"></ul>
+
+    <button type="button" class="btn-load-more is-hidden">Load more</button>
+
+    <div class="loader is-hidden">
+      <span class="spinner"></span>
+      <p class="loader-text">Loading images, please wait...</p>
+    </div>
 
     <script type="module" src="./main.js"></script>
   </body>
